@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  input[type="color"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  input[type="color"]::-webkit-color-swatch {
+    border-radius: 6px;
+    border: 2px solid #40444b;
+  }
+  input[type="color"]::-moz-color-swatch {
+    border-radius: 6px;
+    border: 2px solid #40444b;
+  }
+  
+  /* Add dark theme scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #2f3136;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #202225;
+    border-radius: 4px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #40444b;
+  }
+}
+
+.embed-preview {
+  font-family: Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Dark theme for datetime-local input */
+input[type="datetime-local"] {
+  color-scheme: dark;
+}
